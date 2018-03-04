@@ -1,0 +1,64 @@
+{
+	"name": "string-to-regex",
+	"version": "1.0.0",
+	"description": "this is a simple version to parse path string in the fashion of ES6 style",
+	"main": "dist/stringToRegex.cjs.js",
+	"module": "dist/stringToRegex.esm.js",
+	"browser": "dist/stringToRegex.umd.js",
+	"keywords": [
+		"debounce",
+		"rollup",
+		"invoke"
+	],
+	"author": {
+		"name": "Bowen Li",
+		"email": "superdev@outlook.com.au"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-plugin-external-helpers": "^6.22.0",
+		"babel-preset-env": "^1.6.1",
+		"faucet": "^0.0.1",
+		"husky": "^0.14.3",
+		"lint-staged": "^6.0.0",
+		"path-to-regexp": "^2.1.0",
+		"prettier": "1.9.2",
+		"rollup": "^0.56.3",
+		"rollup-plugin-babel": "^3.0.3",
+		"rollup-plugin-commonjs": "^8.2.6",
+		"rollup-plugin-node-resolve": "^3.0.0",
+		"rollup-plugin-uglify": "^2.0.1",
+		"sinon": "^4.1.3",
+		"tape": "^4.8.0"
+	},
+	"unpkg": "dist/stringToRegex.umd.js",
+	"scripts": {
+		"build": "rollup -c",
+		"dev": "rollup -c -w",
+		"test": "node test/test.js | faucet",
+		"pretest": "npm run build",
+		"precommit": "lint-staged",
+		"format": "prettier --trailing-comma es5 --single-quote --no-semi --write 'src/**/*.js'"
+	},
+	"lint-staged": {
+		"*.{js,json,css,md}": [
+			"prettier prettier --trailing-comma es5 --single-quote --no-semi --write",
+			"git add"
+		],
+		"yarn.lock": [
+			"git rm --cached",
+			"git add"
+		]
+	},
+	"files": [
+		"dist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:bowen31337/stringToRegex.git"
+	},
+	"engines": {
+		"node": ">=8.6.2"
+	}
+}
