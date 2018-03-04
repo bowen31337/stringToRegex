@@ -13,7 +13,7 @@ export default [
 		output: {
 			file: pkg.browser,
 			format: 'umd',
-			name: 'captureNsequentialChars',
+			name: 'stringToRegex',
 		},
 		plugins: [
 			resolve(), // so Rollup can find `ms`
