@@ -6,9 +6,8 @@
 	"module": "dist/stringToRegex.esm.js",
 	"browser": "dist/stringToRegex.umd.js",
 	"keywords": [
-		"debounce",
-		"rollup",
-		"invoke"
+		"string to regex",
+		"rollup"
 	],
 	"author": {
 		"name": "Bowen Li",
