@@ -1,6 +1,6 @@
 # stringToRegex
 
-This is a partial fork version of [Path-to-regex](https://github.com/pillarjs/path-to-regexp), but support only string to regex in a ES6 fashion.
+This is a partial fork version of [Path-to-regex](https://github.com/pillarjs/path-to-regexp), but support only string to regex in an ES6 fashion.
 
 ## Installation
 
