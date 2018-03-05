@@ -1,5 +1,5 @@
 {
-	"name": "string-to-regex",
+	"name": "path-string-to-regex",
 	"version": "1.0.0",
 	"description": "this is a simple version to parse path string in the fashion of ES6 style",
 	"main": "dist/stringToRegex.cjs.js",
